@@ -1,0 +1,541 @@
+/* -----------------------------Header----------------------------------------------*/
+/* Header */
+header {
+    background-color: #3839af;
+    padding: 0px 13px;
+    z-index: 1000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    border-radius: 10px 10px 0px 0px;
+    width: calc(100vw - 59px); /* Subtract padding from total width */
+    transition: border-radius 0.3s ease; /* Add transition for smooth effect */
+    }
+
+    .border-radius-scrolled {
+      border-radius: 35px;
+  }
+
+  .Heading{
+    font-size: 15px;
+  }
+  .logo img{
+    width: 50px; 
+  }
+  a {
+    text-decoration: none; 
+    color: inherit; 
+  }
+
+  /* Nav Bar */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #3839af;
+  }
+  li {
+    display:inline;
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  li a:hover:not(.active) {
+    background-color: #a1dbff;
+    color: #1b1c5a;
+    border-radius: 10px;
+  }
+  .active {
+    background-color: #04AA6D;
+    border: #a1dbff;
+    font-weight: bold;
+  }
+
+  /* Dropdown Button */
+.dropbtn {
+  cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3839af;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 7px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+  /* Live Classes Button */
+  .bn39 {
+    background-image: linear-gradient(135deg, #008aff, #86d472);
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: block;
+    height: 37px;
+    font-size: 17px;
+    padding: 3px;
+    position: relative;
+    text-decoration: none;
+    width: 130px;
+    z-index: 2;
+  }
+  
+  .bn39:hover {
+    color: #fff;
+  }
+  
+  .bn39 .bn39span {
+    align-items: center;
+    background: #2124c1;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+  }
+  
+  .bn39:hover .bn39span {
+    background: transparent;
+  }  
+
+  
+  /* Login Button */
+  .button {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #a1dbff;
+    border: none;
+    color: #1b1c5a;
+    text-align: center;
+    font-size: 17px;
+    padding: 8px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+/* -----------------------------Body----------------------------------------------*/
+/* Slide Show */
+.content {
+  padding-top: 74px; 
+
+
+.mySlides {display:none; width: 100%; border-radius: 0px 0px 10px 10px;}
+.w3-badge {height:13px;width:50px;padding:0;}
+
+/* Banners */
+.banner {
+  position: relative;
+  display: inline-block;
+}
+
+.banner img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Live Classes */
+.glow-on-hover {
+    position: absolute;
+    top: 78%;
+    left: 4.8%;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 10px;
+    align-items: center; 
+    justify-content: center; 
+    font-size: 15px; 
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+/* E-Library */
+.btn-three {
+  position: absolute;
+  top: 75%;
+  left: 58%;
+  color: #FFF;
+  background-color: #0b0434;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s;
+  align-items: center; 
+  justify-content: center;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.btn-three::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(22, 108, 168, 0.374);
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+
+.btn-three:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+
+.btn-three::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  transform: scale(1.2,1.2);
+  border-radius: 10px;
+}
+
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
+
+
+/* Quiz */
+.qz {
+  position: absolute;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 10px;
+  display: inline-block;
+  margin: 15px 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  border-radius: 10px;
+  overflow: hidden; /* Ensure smooth animation */
+  transition: all 0.3s;
+  width: 200px;
+}
+
+.qz::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  transform: translate(-50%, -50%);
+}
+
+.qz:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.qz:hover {
+  color: #000; /* Black text color on hover */
+}
+
+.qz:active {
+  top: 2px;
+}
+
+#b1 {
+  position: absolute;
+  top: 77%;
+  left: 32%;
+  background: #2962ff; /* Slightly deeper blue */
+}
+
+#b2 {
+  position: absolute;
+  top: 77%;
+  right: 32%;
+  background: #c63729; /* Red */
+}
+
+#b3 {
+  position: absolute;
+  top: 87%;
+  left: 32%;
+  background: #dab501; /* Yellow */
+}
+
+#b4 {
+  position: absolute;
+  top: 87%;
+  right: 32%;
+  background: #34a853; /* Green */
+}
+
+
+/* Courses */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 23%;
+  left: 9%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 310px;
+  margin: 15px;
+  text-align: center;
+  font-family: arial;
+  background: rgb(144, 188, 241);
+  border-radius: 10px;
+  line-height: 10px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.10); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  border: 1px solid #000000; 
+}
+
+.h4{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;;
+}
+
+.h1{
+  font-family: Comic Sans;
+}
+
+.cardbox {
+  display: inline-block;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.line {
+  display: inline-block;
+  height: 15px; 
+  background-color: #00000020; 
+  border: 1px solid #030656; 
+  padding: 9px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.price {
+  color: rgb(14, 8, 61);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+
+/* Donations */
+.donate {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  top: 60%;
+  left: 53%;
+}
+
+.dnt {
+  width: 300px;
+  height: 60px;
+  cursor: pointer;
+  background: #AC7088;
+  border: none;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.dnt span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+  position: relative;
+  z-index: 2;
+}
+
+.dnt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #036b9b; /* Green color */
+  transition: left 1s;
+  z-index: 1;
+}
+
+.dnt:hover::before {
+  left: 0;
+}
+
+
+/* Testimonials */
+.review {
+  max-width: 100%;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding inside the container */
+  background-color: #bbd8f1; /* Background color */
+  border: 1px solid #000000; /* Border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+h1{
+      font-size: 32px; /* Large font size for headings */
+      font-weight: bold; /* Bold font weight */
+      color: #00445b; /* Blue color for headings */
+      margin-bottom: 20px;
+}
+
+
+
+}
