@@ -9,6 +9,11 @@ window.addEventListener('scroll', function() {
 });
 
 
+function handleButtonClick() {
+  window.location.href = 'login.html';
+}
+
+
   // ..................................slideshow
   var slideIndex = 1;
   showDivs(slideIndex);
@@ -40,4 +45,29 @@ window.addEventListener('scroll', function() {
   // Automatic slideshow
   var slideInterval = setInterval(plusDivs.bind(null, 1), 2500); // Transition every 3 seconds
 
+
+  // testimonial slideshow
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  });
   
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var button = document.getElementById("b1");
+    var button = document.getElementById("b2");
+    var button = document.getElementById("b3");
+    var button = document.getElementById("b4");
+  
+    // Add event listener to the button
+    button.addEventListener("click", function() {
+      window.location.href = "quiz.html";
+    });
+  });

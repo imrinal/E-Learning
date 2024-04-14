@@ -521,21 +521,57 @@ header {
 /* Testimonials */
 .review {
   max-width: 100%;
+  max-height: 105%;
   margin: 0 auto; /* Center the container horizontally */
   padding: 20px; /* Add some padding inside the container */
-  background-color: #bbd8f1; /* Background color */
+  background-color: #105591; /* Background color */
   border: 1px solid #000000; /* Border */
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 10px; /* Rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
 }
 
 h1{
       font-size: 32px; /* Large font size for headings */
       font-weight: bold; /* Bold font weight */
-      color: #00445b; /* Blue color for headings */
+      color: #a6dff1; /* Blue color for headings */
       margin-bottom: 20px;
 }
 
+
+html,
+    .swiper {
+      max-width: 98%;
+      margin: 0 auto;
+      padding: 3px;
+    }
+
+    .swiper-slide {
+      border-radius: 10px;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80%; /* Set a fixed height for the slide */
+      transition: transform 0.3s ease;
+      max-width: fit-content;
+   
+    }
+
+    .swiper-slide img {
+      border-radius: 10px;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-slide:hover {
+      transform: scale(1.02);
+      transform-origin: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border: 2px solid #ffffff;
+    }
 
 
 }
