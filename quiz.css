@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #67b26f, #4ca2cd); /* Gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 500px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Slightly more pronounced shadow */
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #4ca2cd; /* Light blue title */
+  margin-bottom: 20px;
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color */
+}
+
+.options {
+  margin-bottom: 30px;
+}
+
+.option {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #67b26f; /* Green button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 30px; /* Rounded button */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background-color: #4ca2cd; /* Lighter green on hover */
+  transform: translateY(-2px); /* Button lift effect */
+}
+
+.result {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #67b26f; /* Green result text */
+}
+
+.hide {
+  display: none;
+}
